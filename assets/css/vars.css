@@ -1,0 +1,30 @@
+:root {
+  --fontS: "ShineBubbleDeco";
+  --fontB: "Bebas Neue", sans-serif;
+  --fontC: "Cafe24Ssurround";
+  --fontH: "HancomMalangMalang-Regular";
+
+  --mainBg: #f6f8f9;
+  --pointColor: #ff0000;
+  --pointBg: #f5f5ff;
+
+  --black: #000;
+  --black100: #111;
+  --black200: #222;
+  --black300: #333;
+  --black400: #444;
+  --black500: #555;
+  --black600: #666;
+  --black700: #797979;
+
+  --white: #fff;
+  --white100: #f9f9f9;
+  --white200: #eeeeee;
+  --white300: #dfdfdf;
+  --white400: #cfcfcf;
+  --white500: #c0c0c0;
+
+  --blue: #37bff3;
+  --purple: #a564a8;
+  --red: #f1574f;
+}
