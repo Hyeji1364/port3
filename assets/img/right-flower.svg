@@ -37,7 +37,7 @@
         fill: #95b65c;
       }
       
-      #left-arm {
+  #left-arm {
   animation: rotation 3s infinite;
   }
 

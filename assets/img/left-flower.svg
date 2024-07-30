@@ -56,22 +56,17 @@
 }
 
 #leap {
-  animation: leap-sway 5s infinite ease-in-out;
+  animation: leap-rotation 7s linear infinite;
   transform-origin: 164.2px 119.1px; /* #one 요소의 타원 중심 */
 }
 
-@keyframes leap-sway {
-  0%, 100% {
-    transform: translateX(0px) rotate(0deg) scale(1);
+@keyframes leap-rotation {
+  0% {
+    transform: rotate(0deg);
   }
-  25% {
-    transform: translateX(-2px) rotate(-1deg) scale(1.02);
-  }
-  50% {
-    transform: translateX(0px) rotate(1deg) scale(0.98);
-  }
-  75% {
-    transform: translateX(2px) rotate(-1deg) scale(1.01);
+
+  100% {
+    transform: rotate(360deg);
   }
 }
     </style>
