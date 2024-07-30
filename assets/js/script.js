@@ -1,3 +1,18 @@
+const ani4 = gsap.timeline();
+ani4.to(".contact-wrapper .contact-img", {
+  scale: 0,
+  y: 100
+});
+
+ScrollTrigger.create({
+  animation: ani4,
+  trigger: "#section1",
+  start: "top top",
+  scrub: true,
+  markers: false
+});
+
+
 window.addEventListener('scroll', function () {
   const section = document.getElementById('section5');
   const scrollPosition = window.scrollY;
