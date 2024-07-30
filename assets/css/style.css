@@ -907,7 +907,7 @@
   color: #000;
   font-family: var(--fontH);
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: center;
   margin-top: 20px;
 }
@@ -1003,17 +1003,17 @@
   flex-direction: column;
   background-color: #fcd8da;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   align-items: center;
 }
 
 /* 태양 이미지를 담는 div 스타일 설정 */
 .sun2 {
-  width: 100%;
+  width: 50%;
   max-width: 480px;
   height: auto;
   position: absolute;
-  top: 15vh;
+  top: 0vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4; /* Ensure sun is in front of the tickets */
@@ -1071,7 +1071,7 @@
 
 .purple-line {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 0%;
   width: 100%;
   height: 80px;
@@ -1143,10 +1143,9 @@
 }
 
 .contact-item img {
-  margin: 10px 0 0;
   font-size: 18px;
   color: var(--black);
-  width: 50%;
+  width: 50px;
   height: auto;
 }
 
