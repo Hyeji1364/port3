@@ -22,6 +22,10 @@
   text-decoration: none;
   cursor: pointer;
 }
+#section1 .nav-menu a:hover {
+  text-decoration: none;
+  color: var(--red);
+}
 
 .circle {
   fill: #ed412d;
@@ -122,6 +126,18 @@
   z-index: 100;
 }
 
+#section1 .contact-img:after {
+  content: "";
+  background-image: url(../img/arr.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  left: -30px;
+  bottom: -10px;
+}
+
 #section1 .smile-pink {
   width: 50px;
   height: auto;
@@ -135,25 +151,52 @@
 .blue_flower_scale {
   animation: scale 3s ease-in-out infinite;
 }
-
-#section1 .contact {
+#contact {
   position: fixed;
-  right: 1vw;
-  top: 82vh;
-  transform: translateY(-50%);
-  width: 200px;
+  right: 30px;
+  bottom: 110px;
+  z-index: 10000;
+}
+
+#contact .img {
+  width: 150px;
+  height: 150px;
+  left: 1vw;
+  background: #000;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-image: url(../img/hy.webp);
+  background-position: top center;
+  background-size: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 4px #00000017;
+  position: relative;
+}
+
+#contact .img::after {
+  content: "";
+  background-image: url(../img/arr.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
   height: 60px;
-  background-color: #ff99c8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--black200);
+  position: absolute;
+  left: -30px;
+  bottom: -10px;
+  z-index: 100000;
+}
+#contact button {
+  background-color: #f495bf;
+  color: #000;
+  padding: 10px 20px;
+  border: 3px solid #000;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Erica One";
   font-size: 20px;
   font-weight: normal;
-  border-radius: 5px;
-  border: 3px solid var(--black);
-  font-family: "Erica One";
-  z-index: 20000;
+  position: relative;
+  z-index: 100000;
 }
 
 /* 작은 화면 (예: 스마트폰) */
@@ -302,7 +345,7 @@
   position: sticky;
   left: 0;
   top: 0;
-  z-index: 10000;
+  z-index: 1000;
   border-top: 4px solid #000;
   border-bottom: 4px solid #000;
 }
@@ -1122,6 +1165,7 @@
 #section6 .contact-text {
   position: absolute;
   left: 50%;
+  margin-top: 10vh;
   font-family: var(--fontS);
   transform: translateX(-50%);
   font-size: 8rem;
@@ -1138,7 +1182,7 @@
 }
 
 .contact-item {
-  margin-top: 10vh;
+  margin-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;

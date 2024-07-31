@@ -1,5 +1,5 @@
 const ani4 = gsap.timeline();
-ani4.to(".contact-wrapper .contact-img", {
+ani4.to("#contact .img", {
   scale: 0,
   y: 100
 });
