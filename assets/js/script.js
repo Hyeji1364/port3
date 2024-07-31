@@ -13,6 +13,8 @@ ScrollTrigger.create({
 });
 
 
+
+
 window.addEventListener('scroll', function () {
   const section = document.getElementById('section5');
   const scrollPosition = window.scrollY;

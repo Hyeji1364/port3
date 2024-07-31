@@ -756,6 +756,7 @@
   width: 100%;
   height: 100%;
   align-items: center;
+  overflow: hidden;
 }
 
 #section4 .bar.sec3 {
@@ -818,10 +819,29 @@
   border-radius: 5px;
 }
 
+@keyframes cloud-move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 #section4 .cloud {
   width: 250px;
   height: auto;
   margin-left: -50%;
+  overflow: hidden;
+}
+
+#section4 .cloud img {
+  width: 20%;
+  height: auto;
+  animation: cloud-move 20s linear infinite; /* 20초 동안 반복되는 애니메이션 */
+  position: absolute;
+  top: 20vh;
+  left: 0;
 }
 
 #section4 h2 {
@@ -952,10 +972,16 @@
   height: auto;
   border-radius: 20px;
   position: absolute;
-  right: 50px;
+  right: 150px;
   bottom: 200px;
   padding: 20px;
   border: 4px solid #000;
+}
+
+.workWrap .center2 img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
 }
 
 .workWrap .info2 {
@@ -965,7 +991,7 @@
   height: auto;
   border-radius: 20px;
   position: absolute;
-  right: 100px;
+  left: 150px;
   top: 300px;
   padding: 20px;
   border: 4px solid #000;
@@ -1072,8 +1098,9 @@
   flex-direction: column;
   background-color: #fcd8da;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   align-items: center;
+  overflow: hidden;
 }
 
 /* 태양 이미지를 담는 div 스타일 설정 */
@@ -1082,7 +1109,7 @@
   max-width: 480px;
   height: auto;
   position: absolute;
-  top: 0vh;
+  top: 17vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4; /* Ensure sun is in front of the tickets */
@@ -1129,8 +1156,8 @@
 .blue-line {
   position: absolute;
   top: 60%;
-  left: 0%;
-  width: 100%;
+  left: -2vw;
+  width: 120%;
   height: 80px;
   background-color: var(--blue);
   border: 3px solid var(--black);
@@ -1140,9 +1167,9 @@
 
 .purple-line {
   position: absolute;
-  top: 85%;
-  left: 0%;
-  width: 100%;
+  top: 80%;
+  left: -2vw;
+  width: 120%;
   height: 80px;
   background-color: var(--purple);
   border: 3px solid var(--black);
@@ -1194,6 +1221,10 @@
   font-size: 30px;
   color: var(--black);
   margin-bottom: 20vh;
+}
+
+.contact-item p:hover {
+  color: var(--purple);
 }
 
 .icon-circle {
