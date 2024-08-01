@@ -17,12 +17,12 @@
     <section id="section1">
       <h1 class="title">portfolio</h1>
 
-      <nav class="nav-menu">
+      <nav id="nav-menu">
         <a href="">HOME</a>
         <a href="#section2">ABOUT</a>
         <a href="#section3">SKILL</a>
         <a href="#section4">WORK</a>
-        <a href="#section5">CONTACT</a>
+        <a href="#section6">CONTACT</a>
       </nav>
 
       <div class="sun">
@@ -128,8 +128,9 @@
             </div>
             <div class="icon">
               <img
-                src="https://hyeji1364.github.io/port2/assets/img/coffee-icon.svg"
-                alt="" />
+                src="assets/img/dotcom.svg"
+                alt="html-icon"
+                class="html-icon" />
             </div>
           </div>
           <div class="skill">
@@ -239,6 +240,7 @@
             </div>
           </div>
         </div>
+
         <div class="bar-pattern3"></div>
       </div>
       <div class="purple-bar"></div>
@@ -249,7 +251,7 @@
       <div class="bar sec3">
         팀프로젝트 및 개인 작업물들을 소개합니다. 열심히 만들었습니다.😊
       </div>
-      <h1 class="title5">PROJECT</h1>
+      <h1 class="title4">PROJECT</h1>
       <p>열심히 달리며 만든 저의 작업물들을 소개합니다.</p>
       <div class="run_chracter">
         <img src="assets/img/run-chracter.svg" alt="run-chracter" />
@@ -260,7 +262,7 @@
           alt="star" />
       </div>
       <div class="project1">TEAM PROJECT</div>
-      <div class="cloud"><img src="assets/img/cloud.svg" alt="cloud" /></div>
+      <div class="cloud1"><img src="assets/img/cloud.svg" alt="cloud1" /></div>
 
       <div class="workWrap">
         <div class="center1">
@@ -268,6 +270,9 @@
             src="assets/img/site1.png"
             alt="site1 img"
             class="background-image" />
+        </div>
+        <div class="cloud2">
+          <img src="assets/img/cloud.svg" alt="cloud2" />
         </div>
         <div class="info1">
           <h2>FOR MY CELEB</h2>
@@ -333,6 +338,7 @@
         </div>
       </div>
 
+      <div class="cloud3"><img src="assets/img/cloud.svg" alt="cloud3" /></div>
       <div class="workWrap">
         <div class="center1">
           <img
@@ -520,6 +526,71 @@
     <!-- //section4 -->
 
     <section id="section5">
+      <div class="bar-pattern1"></div>
+      <h1 class="title5">Design port</h1>
+      <div class="portfolio-container">
+        <!-- 포트폴리오 아이템1 -->
+        <div class="portfolio-item" onclick="openPopup('popup1')">
+          <img src="assets/img/port1-pre.jpeg" alt="Design1" />
+        </div>
+        <!-- 포트폴리오 아이템2 -->
+        <div class="portfolio-item" onclick="openPopup('popup2')">
+          <img src="assets/img/port2.jpg" alt="Design2" />
+        </div>
+        <!-- 포트폴리오 아이템3 -->
+        <div class="portfolio-item" onclick="openPopup('popup3')">
+          <img src="assets/img/port1.jpg" alt="Design2" />
+        </div>
+        <!-- 포트폴리오 아이템4 -->
+        <div class="portfolio-item" onclick="openPopup('popup4')">
+          <img src="assets/img/port1.jpg" alt="Design3" />
+        </div>
+      </div>
+
+      <!-- 팝업1 -->
+      <div id="popup1" class="portfolio-popup">
+        <div class="popup-content">
+          <button class="popup-close" onclick="closePopup('popup1')">
+            &times;
+          </button>
+          <img src="assets/img/port1.jpg" alt="Design 1" />
+        </div>
+      </div>
+
+      <!-- 팝업 2 -->
+      <div id="popup2" class="portfolio-popup">
+        <div class="popup-content">
+          <button class="popup-close" onclick="closePopup('popup2')">
+            &times;
+          </button>
+          <img src="assets/img/port2.jpg" alt="Design 2" />
+        </div>
+      </div>
+
+      <!-- 팝업 3 -->
+      <div id="popup3" class="portfolio-popup">
+        <div class="popup-content">
+          <button class="popup-close" onclick="closePopup('popup3')">
+            &times;
+          </button>
+          <img src="assets/img/design3-large.webp" alt="Design 3" />
+        </div>
+      </div>
+
+      <!-- 팝업 4 -->
+      <div id="popup4" class="portfolio-popup">
+        <div class="popup-content">
+          <button class="popup-close" onclick="closePopup('popup4')">
+            &times;
+          </button>
+          <img src="assets/img/design4-large.webp" alt="Design 4" />
+        </div>
+      </div>
+    </section>
+    <!-- //section5 -->
+
+    <section id="section6">
+      <div class="bar-pattern1"></div>
       <div class="sun2">
         <img src="assets/img/sun.svg" alt="sun2" />
       </div>
@@ -531,11 +602,10 @@
         <img src="assets/img/pink-ticket.webp" alt="pink-ticket" />
       </div>
       <div class="purple-line"></div>
-      <div class="bar-pattern1"></div>
     </section>
-    <!-- //section5 -->
+    <!-- //section6 -->
 
-    <section id="section6">
+    <section id="section7">
       <span class="contact-text">CONTACT</span>
       <div class="contact-info">
         <div class="contact-item">
@@ -575,12 +645,14 @@
         &copy; KIM HYEJI All Rights Reserved.
       </p>
     </section>
+
     <!-- //section6 -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="assets/js/script.js"></script>

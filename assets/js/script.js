@@ -12,21 +12,48 @@ ScrollTrigger.create({
   markers: false
 });
 
+// contact me 효과
 
+function openPopup(popupId) {
+  // 모든 팝업 닫기
+  document.querySelectorAll('.portfolio-popup').forEach(popup => {
+    popup.classList.remove('active');
+  });
 
+  // 클릭한 팝업 열기
+  document.getElementById(popupId).classList.add('active');
+}
 
-window.addEventListener('scroll', function () {
-  const section = document.getElementById('section5');
-  const scrollPosition = window.scrollY;
-  const windowHeight = window.innerHeight;
+function closePopup(popupId) {
+  document.getElementById(popupId).classList.remove('active');
+}
 
-  // Check if the scroll position is at the bottom
-  if (scrollPosition + windowHeight >= document.body.scrollHeight) {
-    section.classList.add('swap');
-  } else {
-    section.classList.remove('swap');
+// 팝업 외부 클릭 시 닫기 함수
+document.addEventListener('click', function (event) {
+  const activePopup = document.querySelector('.portfolio-popup.active');
+  if (activePopup) {
+    const popupContent = activePopup.querySelector('.popup-content');
+    // 팝업 내용 내부를 클릭했는지 확인
+    if (!popupContent.contains(event.target)) {
+      closePopup(activePopup.id);
+    }
   }
 });
+
+// 팝업 아이템 클릭 이벤트 처리
+document.querySelectorAll('.portfolio-item').forEach(item => {
+  item.addEventListener('click', function (event) {
+    const popupId = this.getAttribute('onclick').match(/'([^']+)'/)[1];
+    openPopup(popupId);
+    event.stopPropagation(); // 클릭 이벤트가 document로 전파되지 않도록 차단
+  });
+});
+
+
+
+// 팝업 효과
+
+
 
 
 const circle =
