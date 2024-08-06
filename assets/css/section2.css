@@ -1,0 +1,265 @@
+#section2 {
+  background-color: #fcd8da;
+  width: 100%;
+  position: relative;
+  margin-top: -80px;
+}
+
+.bar {
+  width: 100%;
+  height: 80px;
+  line-height: 70px !important;
+  font-size: 1.5rem !important;
+  font-family: var(--fontH) !important;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#section2 {
+  background-color: #fcd8da;
+  width: 100%;
+  position: relative;
+  margin-top: -80px;
+}
+
+.bar {
+  width: 100%;
+  height: 80px;
+  line-height: 70px !important;
+  font-size: 1.5rem !important;
+  font-family: var(--fontH) !important;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#section2 .bar.sec1 {
+  width: 100%;
+  height: 80px;
+  background-color: #37bff3;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+
+#section2 > div {
+  font-size: 9.5vw;
+  line-height: 0.8;
+  font-family: var(--fontB);
+  text-transform: uppercase;
+  position: relative;
+}
+
+#section2 .bar-container {
+  margin-top: 80px;
+  padding-left: 1.9vw;
+  padding-right: 1.9vw;
+}
+
+#section2 > div .box1 {
+  width: 30.5vw;
+  height: 7.5vw;
+  margin: 0 10px;
+  display: inline-block;
+  background-image: url("https://images.unsplash.com/photo-1721020028427-a2d7ab52e35e?q=80&w=2728&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 0.4vw;
+
+  color: white;
+  border-radius: 10px;
+}
+
+#section2 > div .box2,
+#section2 > div .box3,
+#section2 > div .box4 {
+  width: auto;
+  height: 7.5vw;
+  margin: 0 10px;
+  display: inline-block;
+  background-image: url("https://images.unsplash.com/photo-1610908483124-19d9848c5d78?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 0.4vw;
+  border-radius: 10px;
+  color: var(--white);
+}
+
+#section2 .pink_flower {
+  width: 10vw;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  top: -1vw;
+}
+
+#section2 .blue_flower {
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+}
+
+/* .blue_flower_scale {
+  animation: scale 3s ease-in-out infinite;
+} */
+
+.bar-pattern1 {
+  width: calc(100% - 4.7vw);
+  border: 0;
+  margin: 5% auto;
+  background-color: var(--blue);
+  background-image: url(../img/pattern.webp);
+  background-position: 50%;
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  border: 3px solid #000;
+  border-radius: 6px;
+  height: 27px;
+  display: block;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pink_flower_rotate {
+  animation: rotate 5s linear infinite;
+  transform-origin: 100px 100px; /* SVG의 중심 */
+}
+
+.blue_flower_scale {
+  animation: scale 3s ease-in-out infinite;
+}
+
+#section2 .picture {
+  width: 30vw;
+  height: 30vw;
+  background-image: url(../img/about-img.webp);
+  background-position: center top;
+  background-size: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+#section2 .picture h3 {
+  font-family: var(--fontS);
+  text-align: center;
+  color: #ed412d;
+  position: relative;
+  margin-bottom: -2vw;
+  font-size: 6.8rem;
+  -webkit-text-stroke: 2px var(--white);
+}
+
+#section2 .desc {
+  font-family: var(--fontH);
+  font-weight: 700;
+  text-align: center;
+  line-height: 2;
+  font-size: 1.3rem;
+  margin-top: 4vw;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+#section2 em {
+  position: relative;
+  z-index: 1;
+}
+
+#section2 em::before {
+  content: "";
+  background-color: #f1574f80;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 30px;
+}
+
+#section2 .text-and-icons {
+  display: flex;
+  flex-direction: column; /* 수직정렬 */
+  align-items: center;
+  text-align: center;
+}
+
+#section2 .text-and-icons p {
+  max-width: 600px; /* 텍스트의 최대 너비 설정 */
+}
+
+#section2 .smile-pink {
+  margin-left: 3vw;
+  margin-bottom: 150px;
+  width: 35px;
+  height: auto;
+}
+
+#section2 .exhibition-icon {
+  width: 10%;
+
+  margin-top: -23%;
+  margin-left: 10%;
+}
+
+#section2 .coffee-icon {
+  width: 10%;
+  margin-top: -6%;
+  margin-left: 22%;
+  margin-bottom: 5%;
+}
+
+#section2 .photo-icon {
+  width: 10%;
+  margin-top: -23%;
+  margin-left: 75%;
+}
+
+.clickable {
+  cursor: pointer;
+}

@@ -53,6 +53,29 @@ document.querySelectorAll('.portfolio-item').forEach(item => {
 
 // 팝업 효과
 
+document.addEventListener("DOMContentLoaded", function () {
+  const blueLine = document.querySelector(".blue-line::before");
+
+  function animateText() {
+    let position = 100;
+    const speed = 0.1; // 속도 조절
+
+    function move() {
+      position -= speed;
+      if (position < -100) {
+        position = 100;
+      }
+      blueLine.style.transform = `translateX(${position}%) translateY(-50%)`;
+      requestAnimationFrame(move);
+    }
+
+    move();
+  }
+
+  animateText();
+});
+
+// blue-line효과
 
 
 

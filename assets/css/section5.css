@@ -1,0 +1,135 @@
+#section5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcd8da;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+}
+
+#section5 .bar-pattern1 {
+  width: calc(100% - 4.7vw);
+  border: 0;
+  margin: 5% auto;
+  background-color: var(--blue);
+  background-image: url(../img/pattern.webp);
+  background-position: 50%;
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  border: 3px solid #000;
+  border-radius: 6px;
+  height: 27px;
+  display: block;
+}
+
+#section5 .title5 {
+  text-align: center;
+  font-family: var(--fontB);
+  text-transform: uppercase;
+  color: #f16961;
+  /* -webkit-text-stroke: 2px var(--white); */
+  font-size: 4vw;
+}
+
+/* 포트폴리오 섹션 추가 */
+#section5 .portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#section5 .portfolio-item {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#section5 .portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.portfolio-description {
+  font-family: var(--fontH);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  z-index: 1;
+}
+
+#section5 .portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 팝업 창 스타일 */
+#section5 .portfolio-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#section5 .portfolio-popup.active {
+  display: flex;
+}
+
+#section5 .popup-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+#section5 .popup-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#section5 .popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+#section5 .popup-close:hover {
+  transform: scale(1.1);
+  background-color: #444;
+}

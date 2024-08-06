@@ -1,0 +1,290 @@
+#section1 {
+  background-color: #fcd8da;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#nav-menu {
+  font-family: var(--fontB);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 30px;
+  font-size: 2.5rem;
+  z-index: 1;
+}
+
+#nav-menu a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#nav-menu a:hover {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.circle {
+  fill: #ed412d;
+}
+
+.clover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: #3e82f7;
+}
+
+.cloud {
+  fill: #2da94f;
+  stroke: #2da94f;
+}
+.x {
+  fill: #fdbd00;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.bg svg {
+  display: block;
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  transform: translateZ(0px);
+  will-change: transform; /* will-change 속성을 사용하여 변환 성능 최적화 */
+}
+
+#section1 .sun {
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+#section1 .sun svg {
+  width: 100%;
+}
+#section1 .sun .glass {
+  display: none;
+}
+#section1 .sun .noon {
+  animation: no 2s infinite ease;
+}
+
+@keyframes no {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+#section1 .main_img {
+  width: 150px;
+  height: 170px;
+  background-image: url("../img/me.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+  position: absolute;
+  top: 68%;
+  right: -1.7%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+#section1 .contact-wrapper {
+  position: fixed;
+  right: 6vw;
+  bottom: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 20000;
+}
+
+#section1 .contact-img {
+  width: 150px; /* 필요한 크기로 조정 */
+  height: auto;
+  border: 10px solid var(--white);
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 60px; /* 버튼과의 간격 조정 */
+  z-index: 100;
+}
+
+#section1 .contact-img:after {
+  content: "";
+  background-image: url(../img/arr.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  left: -30px;
+  bottom: -10px;
+}
+
+#section1 .smile-pink {
+  width: 50px;
+  height: auto;
+  left: 3vw;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 60px; /* 버튼과의 간격 조정 */
+  z-index: 100;
+}
+
+.blue_flower_scale {
+  animation: scale 3s ease-in-out infinite;
+}
+#contact {
+  position: fixed;
+  right: 30px;
+  bottom: 110px;
+  z-index: 10000;
+}
+
+#contact .img {
+  width: 150px;
+  height: 150px;
+  left: 1vw;
+  background: #000;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-image: url(../img/hy.webp);
+  background-position: top center;
+  background-size: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 4px #00000017;
+  position: relative;
+}
+
+#contact .img::after {
+  content: "";
+  background-image: url(../img/arr.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  left: -30px;
+  bottom: -10px;
+  z-index: 100000;
+}
+#contact button {
+  background-color: #f495bf;
+  color: #000;
+  padding: 10px 20px;
+  border: 3px solid #000;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Erica One";
+  font-size: 20px;
+  font-weight: normal;
+  position: relative;
+  z-index: 100000;
+}
+
+/* 작은 화면 (예: 스마트폰) */
+@media (max-width: 600px) {
+  #section1 .contact {
+    top: 75vh; /* 작은 화면에서는 top을 더 위로 */
+  }
+}
+
+/* 중간 화면 (예: 태블릿) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #section1 .contact {
+    top: 78vh; /* 중간 화면에서는 top을 약간 조정 */
+  }
+}
+
+/* 큰 화면 (예: 데스크탑) */
+@media (min-width: 1025px) {
+  #section1 .contact {
+    top: 85vh; /* 큰 화면에서는 기본 값 */
+  }
+}
+.main-img.shrink {
+  width: 200px;
+  height: 60px;
+  top: 82%;
+  left: auto;
+  right: 1vw;
+  transform: translateY(-50%);
+}
+.contact img {
+  display: none;
+}
+.contact.show img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section1 .title {
+  font-size: 10vw;
+  padding-bottom: 45vh;
+  font-family: var(--fontS);
+  text-transform: uppercase;
+  z-index: 1000;
+  color: #f1574f;
+  -webkit-text-stroke: 2px var(--white);
+}
+#section1 .sun {
+  width: 500px;
+  margin: 0 auto -35px;
+}
+#Layer_1 {
+  position: relative;
+  z-index: 1000;
+}
+#Layer_2 {
+  animation: rotation 4s infinite;
+}
+#Layer_3 {
+  animation: upDown 3s infinite;
+  position: relative;
+  z-index: -1;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* 반응형 디자인 */

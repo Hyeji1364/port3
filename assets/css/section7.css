@@ -1,0 +1,79 @@
+#section7 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcd8da;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+#section7 .contact-text {
+  position: absolute;
+  left: 50%;
+  margin-top: 10vh;
+  font-family: var(--fontS);
+  transform: translateX(-50%);
+  font-size: 8rem;
+  color: var(--purple);
+  z-index: 6;
+  -webkit-text-stroke: 2px var(--white);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20vh;
+}
+
+.contact-item {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item p {
+  font-family: var(--fontB);
+  margin: 30px;
+  font-size: 30px;
+  color: var(--black);
+  margin-bottom: 20vh;
+}
+
+.contact-item p:hover {
+  color: var(--purple);
+}
+
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.icon-circle img {
+  width: 80px; /* Adjust the icon size as needed */
+  height: auto;
+}
+
+.contact-item img {
+  font-size: 18px;
+  color: var(--black);
+  width: 50px;
+  height: auto;
+}
+
+.footer-text {
+  font-family: var(--fontH);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 50px;
+}
