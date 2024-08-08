@@ -9,6 +9,24 @@
   text-align: center;
 }
 
+.bar {
+  width: 100%;
+  height: 80px;
+  line-height: 70px !important;
+  font-size: 1.5rem !important;
+  font-family: var(--fontH) !important;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 #section3 .bar.sec2 {
   width: 100%;
   height: 80px;
@@ -68,12 +86,6 @@
 #section3 .flower-icon {
   width: 20%;
   margin-top: 5%;
-}
-
-#section3 .flower-icon.left {
-}
-
-#section3 .flower-icon.right {
 }
 
 #section3 .skillWrap {
@@ -165,7 +177,7 @@
 }
 
 #section3 .skillWrap .skill .icon {
-  width: 200px;
+  width: 15%;
   position: absolute;
   left: 50%;
   top: 20%;
@@ -198,3 +210,355 @@
 }
 
 /* section3 끝 */
+
+/* 중간화면( 1440px ~ 1919px ) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  #section3 .bar {
+    font-size: 1.3rem;
+    height: 70px;
+  }
+
+  #section3 .title4 {
+    font-size: 5rem;
+  }
+
+  #section3 .flower-icon {
+    width: 15%;
+  }
+
+  #section3 .skillWrap {
+    width: 900px;
+  }
+
+  #section3 .skillWrap .skill .right h3 {
+    font-size: 3rem;
+  }
+
+  #section3 .skillWrap .skill .right p {
+    font-size: 20px;
+  }
+
+  #section3 .skillWrap .skill .icon,
+  #section3 .skillWrap .skill .html-icon {
+    width: 150px;
+  }
+}
+
+/* 1025px ~ 1439px (중형 데스크탑 및 태블릿 가로모드) */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  #section3 .bar {
+    font-size: 1.3rem !important;
+    height: 70px;
+  }
+
+  #section3 .title4 {
+    font-size: 5rem;
+  }
+
+  #section3 .flower-icon {
+    width: 15%;
+  }
+
+  #section3 .skillWrap {
+    width: 900px;
+  }
+
+  #section3 .skillWrap .skill .right h3 {
+    font-size: 3rem;
+  }
+
+  #section3 .skillWrap .skill .right p {
+    font-size: 1.2rem;
+  }
+
+  #section3 .skillWrap .skill .icon,
+  #section3 .skillWrap .skill .html-icon {
+    width: 150px;
+  }
+}
+
+/* 768px ~ 1024px (태블릿 세로모드) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #section3 .bar {
+    font-size: 1.3rem !important;
+    height: 70px;
+  }
+
+  #section3 .title4 {
+    font-size: 5rem;
+  }
+
+  #section3 .flower-icon {
+    width: 15%;
+  }
+
+  #section3 .skillWrap {
+    width: 900px;
+  }
+
+  #section3 .skillWrap .skill .left .img {
+    width: 70%;
+  }
+
+  #section3 .skillWrap .skill .left .img span {
+    font-size: 60px;
+  }
+
+  #section3 .skillWrap .skill .right h3 {
+    font-size: 2rem;
+  }
+
+  #section3 .skillWrap .skill .right p {
+    font-size: 1rem;
+  }
+
+  #section3 .skillWrap .skill .icon {
+    width: 15%;
+    margin-left: -10vw;
+    height: auto;
+  }
+}
+
+/* 646px ~ 767px (작은 태블릿 및 큰 스마트폰) */
+@media (min-width: 646px) and (max-width: 767px) {
+  #section3 .bar {
+    font-size: 1.1rem !important;
+    height: 60px;
+    line-height: 50px;
+  }
+
+  #section3 .title4 {
+    font-size: 4rem;
+  }
+
+  #section3 .flower-icon {
+    width: 12%;
+  }
+
+  #section3 .skillWrap {
+    width: 85%;
+  }
+
+  #section3 .skillWrap .skill .left .img {
+    width: 70%;
+  }
+
+  #section3 .skillWrap .skill .left .img span {
+    font-size: 60px;
+  }
+
+  #section3 .skillWrap .skill .right h3 {
+    font-size: 2.3rem;
+  }
+
+  #section3 .skillWrap .skill .right p {
+    font-size: 16px;
+  }
+
+  #section3 .skillWrap .skill .icon {
+    width: 15%;
+    margin-left: -2vw;
+    height: auto;
+  }
+
+  #section3 .skillWrap .skill .icon .html-icon {
+    margin-left: -10vw;
+  }
+
+  #section3 .skillWrap .skill .icon .coffee-icon {
+    margin-left: -15vw;
+  }
+
+  #section3 .skillWrap .skill .icon .photo-icon {
+    margin-left: 5vw;
+  }
+}
+
+/* 600px ~ 645px (작은 태블릿 및 큰 스마트폰) */
+@media (min-width: 600px) and (max-width: 645px) {
+  #section3 .bar {
+    font-size: 1rem !important;
+    height: 65px !important;
+    line-height: 50px;
+  }
+
+  #section3 .title4 {
+    font-size: 3.5rem;
+  }
+
+  #section3 .flower-icon {
+    width: 9%;
+  }
+
+  #section3 .skillWrap {
+    width: 85%;
+  }
+
+  #section3 .skillWrap .skill .left .img {
+    width: 70%;
+  }
+
+  #section3 .skillWrap .skill .left .img span {
+    font-size: 60px;
+  }
+
+  #section3 .skillWrap .skill .right h3 {
+    font-size: 2rem;
+  }
+
+  #section3 .skillWrap .skill .right p {
+    font-size: 1.2rem;
+  }
+
+  #section3 .skillWrap .skill .icon {
+    width: 15%;
+    margin-left: -2vw;
+    height: auto;
+  }
+
+  #section3 .skillWrap .skill .icon .html-icon {
+    margin-left: -10vw;
+  }
+
+  #section3 .skillWrap .skill .icon .coffee-icon {
+    margin-left: -15vw;
+  }
+
+  #section3 .skillWrap .skill .icon .photo-icon {
+    margin-left: 5vw;
+  }
+}
+
+/* 481px ~ 599px (스마트폰 일반 화면) */
+@media (min-width: 481px) and (max-width: 599px) {
+  #section3 .title4 {
+    font-size: 3rem;
+  }
+
+  #section3 .flower-icon {
+    display: none;
+  }
+
+  #section3 .skillWrap {
+    width: 90%;
+  }
+
+  #section3 .skillWrap .skill .left .img {
+    width: 70%;
+  }
+
+  #section3 .skillWrap .skill .left .img span {
+    font-size: 60px;
+  }
+
+  #section3 .skillWrap .skill .right h3 {
+    font-size: 1.8rem;
+  }
+
+  #section3 .skillWrap .skill .right p {
+    font-size: 14px;
+  }
+
+  #section3 .skillWrap .skill .icon {
+    width: 15%;
+    margin-left: -2vw;
+    height: auto;
+  }
+
+  #section3 .skillWrap .skill .icon .html-icon {
+    margin-left: -10vw;
+  }
+
+  #section3 .skillWrap .skill .icon .coffee-icon {
+    margin-left: -15vw;
+  }
+
+  #section3 .skillWrap .skill .icon .photo-icon {
+    margin-left: 5vw;
+  }
+}
+
+/* 360px ~ 480px (작은 스마트폰) */
+@media (min-width: 360px) and (max-width: 480px) {
+  #section3 .title4 {
+    font-size: 2.5rem;
+  }
+
+  #section3 .flower-icon {
+    display: none;
+  }
+
+  #section3 .skillWrap {
+    width: 95%;
+  }
+
+  #section3 .skillWrap .skill .left .img {
+    width: 70%;
+  }
+
+  #section3 .skillWrap .skill .left .img span {
+    font-size: 50px;
+  }
+
+  #section3 .skillWrap .skill .right h3 {
+    font-size: 1.5rem;
+  }
+
+  #section3 .skillWrap .skill .right p {
+    font-size: 13px;
+  }
+
+  #section3 .skillWrap .skill .icon {
+    width: 15%;
+    margin-left: -2vw;
+    height: auto;
+  }
+
+  #section3 .skillWrap .skill .icon .html-icon {
+    margin-left: -10vw;
+  }
+
+  #section3 .skillWrap .skill .icon .coffee-icon {
+    margin-left: -15vw;
+  }
+
+  #section3 .skillWrap .skill .icon .photo-icon {
+    margin-left: 5vw;
+  }
+}
+
+/* 359px 이하 (아주 작은 스마트폰) */
+@media (max-width: 359px) {
+  #section3 .title4 {
+    font-size: 2rem;
+  }
+
+  #section3 .flower-icon {
+    display: none;
+  }
+
+  #section3 .skillWrap {
+    width: 100%;
+  }
+
+  #section3 .skillWrap .skill .left .img {
+    width: 70%;
+  }
+
+  #section3 .skillWrap .skill .left .img span {
+    font-size: 40px;
+  }
+
+  #section3 .skillWrap .skill .right h3 {
+    font-size: 1.3rem;
+  }
+
+  #section3 .skillWrap .skill .right p {
+    font-size: 12px;
+  }
+
+  #section3 .skillWrap .skill .icon,
+  #section3 .skillWrap .skill .html-icon {
+    width: 60px;
+  }
+}
