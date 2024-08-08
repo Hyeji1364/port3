@@ -59,6 +59,9 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
 /* 공백 초기화 */
 body,
 button,
