@@ -51,7 +51,7 @@
 }
 
 #section2 > div .box1 {
-  width: 30.5vw;
+  width: 31.5vw;
   height: 7.5vw;
   margin: 0 10px;
   display: inline-block;
@@ -84,7 +84,7 @@
 }
 
 #section2 .pink_flower {
-  width: 10vw;
+  width: 12vw;
   height: auto;
   display: inline-block;
   position: relative;
@@ -236,50 +236,6 @@
 
 .clickable {
   cursor: pointer;
-}
-
-/* 1440px ~ 1900px (데스크탑 일반 화면) */
-@media (min-width: 1440px) and (max-width: 1919px) {
-  #section2 .bar {
-    font-size: 1.3rem;
-    height: 90px;
-    line-height: 80px;
-  }
-
-  #section2 > div {
-    font-size: 9vw;
-  }
-
-  #section2 .box1,
-  #section2 .box3,
-  #section2 .box4 {
-    width: 3vw;
-    height: 8vw;
-    padding-top: 0.8vw;
-  }
-
-  #section2 .pink_flower {
-    width: 9vw;
-  }
-
-  #section2 .picture {
-    width: 28vw;
-    height: 28vw;
-  }
-
-  #section2 .picture h3 {
-    font-size: 7rem;
-  }
-
-  #section2 .desc {
-    font-size: 1.4rem;
-  }
-
-  #section2 .exhibition-icon,
-  #section2 .coffee-icon,
-  #section2 .photo-icon {
-    width: 11%;
-  }
 }
 
 /* 1025px ~ 1439px (작은 데스크탑 및 태블릿 가로모드) */
